@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/gg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:id="@+id/c_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="커피커피"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:theme="@style/list_item_head_tv" />
+
+            <TextView
+                android:id="@+id/c_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/c_name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"
+                android:text="커피커피가격"
+                android:theme="@style/list_item_head_tv" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/gg"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/cnt_tv"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:text="수량"
+                android:theme="@style/list_item_head_tv" />
+
+            <RelativeLayout
+
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/cnt_tv">
+
+                <TextView
+                    android:id="@+id/cnt_m"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical"
+                    android:text="-"
+                    android:theme="@style/list_item_head_tv" />
+
+                <TextView
+                    android:id="@+id/cnt_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_vertical"
+                    android:text="1"
+                    android:theme="@style/list_item_head_tv" />
+
+                <TextView
+                    android:id="@+id/cnt_p"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:text="+"
+                    android:theme="@style/list_item_head_tv" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/cream"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gg"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/cream_tv"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:text="휘핑크림"
+                android:theme="@style/list_item_head_tv" />
+
+            <RelativeLayout
+                android:id="@+id/cream_btn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/cream_tv"
+                android:background="@drawable/item_chat">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="기본"
+                    android:theme="@style/list_item_head_tv" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text=">"
+                    android:theme="@style/list_item_head_tv" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cream"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp">
+
+            <TextView
+
+                android:id="@+id/shot_tv"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:text="샷추가"
+                android:theme="@style/list_item_head_tv" />
+
+            <RelativeLayout
+                android:id="@+id/shot_btn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/shot_tv"
+                android:background="@drawable/item_chat">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="기본"
+                    android:theme="@style/list_item_head_tv" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text=">"
+                    android:theme="@style/list_item_head_tv" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/buy"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/cream"
+            android:layout_margin="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_btn"
+            android:text="담기"
+            android:textColor="#FFF"
+            android:theme="@style/list_item_head_tv" />
+    </RelativeLayout>
+
+</LinearLayout>
